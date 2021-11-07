@@ -55,6 +55,6 @@ function containsCommonItem3(arr1, arr2) {
   return arr1.some((item) => arr2.includes(item));
 }
 
-containsCommonItem(array1, array2);
-containsCommonItem2(array1, array2);
-containsCommonItem3(array1, array2);
+console.log(containsCommonItem(array1, array2));
+console.log(containsCommonItem2(array1, array2));
+console.log(containsCommonItem3(array1, array2));
