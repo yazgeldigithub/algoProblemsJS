@@ -4,7 +4,7 @@
 //   // code block to be executed
 // }
 
-const person = {fname:"John", lname:"Doe", age:25};
+const person = { fname: "John", lname: "Doe", age: 25 };
 
 let text = "";
 for (let x in person) {
@@ -13,49 +13,47 @@ for (let x in person) {
 
 console.log(text);
 
-let fruits = ['Apple', 'Banana']
-fruits.forEach(function(item, index, array) {
-  console.log(item, index) 
+let fruits = ["Apple", "Banana"];
+fruits.forEach(function (item, index, array) {
+  console.log(item, index);
   // Apple 0 // Banana 1
-})
+});
 
-
-let newLength = fruits.push('Orange')
+let newLength = fruits.push("Orange");
 // ["Apple", "Banana", "Orange"]
 
-let last = fruits.pop() // remove Orange (from the end)
+let last = fruits.pop(); // remove Orange (from the end)
 // ["Apple", "Banana"]
 
-let first = fruits.shift() // remove Apple from the front
+let first = fruits.shift(); // remove Apple from the front
 // ["Banana"]
 
-let newLength1 = fruits.unshift('Strawberry') // add to the front
+let newLength1 = fruits.unshift("Strawberry"); // add to the front
 // ["Strawberry", "Banana"]
 
-fruits.push('Mango')
+fruits.push("Mango");
 // ["Strawberry", "Banana", "Mango"]
 
-let pos = fruits.indexOf('Banana')
+let pos = fruits.indexOf("Banana");
 // 1
 
-let removedItem = fruits.splice(pos, 1) // this is how to remove an item
+let removedItem = fruits.splice(pos, 1); // this is how to remove an item
 
 // ["Strawberry", "Mango"]
 
-let shallowCopy = fruits.slice() // this is how to make a copy
+let shallowCopy = fruits.slice(); // this is how to make a copy
 // ["Strawberry", "Mango"]
-
 
 // Log pairs of array
 
 const boxes = ["a", "b", "c", "d", "e"];
 
 function logallPairsOfArray(array) {
-    for(let i = 0; i < array.length; i++) {
-        for(let j = 0; j < array.length; j++) {
-            console.log(array[i], array[j])
-        }
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      console.log(array[i], array[j]);
     }
+  }
 }
 
 logallPairsOfArray(boxes);
@@ -63,13 +61,13 @@ logallPairsOfArray(boxes);
 // O(n ^ 2) Quadratic time
 
 function compressBoxesTwice(boxes1, boxes2) {
-    boxes1.forEach(function(boxes) {
-        console.log(boxes)
-    });
+  boxes1.forEach(function (boxes) {
+    console.log(boxes);
+  });
 
-    boxes2.forEach(function(boxes) {
-        console.log(boxes)
-    })
+  boxes2.forEach(function (boxes) {
+    console.log(boxes);
+  });
 }
 
 // O(a + b)
