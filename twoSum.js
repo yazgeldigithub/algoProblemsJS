@@ -17,7 +17,7 @@ function twoSum(nums, target) {
 
   /// iterate second time to find indices of sum of teo numbers that equals to our target
   for (let i = 0; i < nums.length; i++) {
-    // We will subtract from target until we wind potentialKey in our hash
+    // We will subtract from target until we find potentialKey in our hash
     let potentialKey = target - nums[i];
     // If our hash has potentialKey and it's not equal to the same index, then return i and value of hash that is equal to potentialKey
     if (hash[potentialKey] && hash[potentialKey] !== i) {
