@@ -26,9 +26,19 @@ console.log(mergeSortedArrays([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]));
 console.log(mergeSortedArrays([1, 3, 5, 8, 9, 10], [2, 3, 6, 8, 11]));
 // [1, 2, 3, 3, 5, 6, 8, 8, 9, 10, 11]
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// nums1 = [1, 2, 3, 0, 0, 0]
+// m = 3
+// nums2 = [2, 5, 6]
+// n = 3
+
 function merge(nums1, m, nums2, n) {
+  // We set the first pointer to 3-1
   let first = m - 1;
+  // We set the second pointer to 3-1
   let second = n - 1;
+  // We set the ith array at the end of our first array
   let i = m + n - 1;
 
   while (second >= 0) {
